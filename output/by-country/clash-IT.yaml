@@ -29,12 +29,17 @@ proxies:
   udp: true
 - name: 🇮🇹 意大利 (Italy) 04 - xiaohe
   type: vless
-  server: 204.216.216.23
-  port: 10086
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+  server: 154.197.75.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   udp: true
   tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime37.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
