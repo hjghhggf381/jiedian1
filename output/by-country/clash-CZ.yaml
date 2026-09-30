@@ -6,18 +6,18 @@ log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - xiaohe
   type: vless
-  server: 104.21.19.225
-  port: 443
-  uuid: fa9ec1a9-6c24-4be2-9472-d1e2592b45b4
+  server: 104.21.15.145
+  port: 2053
+  uuid: dc1e9f00-c064-4870-9bfc-463db50257d7
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: G84-nee38RYD6hElYZ6Z9qW1rm1BdL1.FornEwirAn-1056.WorkerS.dEv
+  servername: RESTlESs-MoON-dD68RidaM-tOo-In-MAmLEkat.hGtghFF67tdFHUt3.WORkerS.DEV
   network: ws
   ws-opts:
-    path: /vl/pmsM6vhny85OmnvYbXIpf1l
+    path: /eyJqdW5rIjoicVkwaG9XUUQyUDhzRkZ5UiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
     headers:
-      Host: g84-nee38ryd6helyz6z9qw1rm1bdl1.fornewiran-1056.workers.dev
+      Host: restless-moon-dd68ridam-too-in-mamlekat.hgtghff67tdfhut3.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
