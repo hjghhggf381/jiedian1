@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇬🇪 GE 01 - xiaohe
+- name: 🇱🇻 LV 01 - xiaohe
   type: vless
-  server: geo.shkola112.site
+  server: 91.108.189.38
   port: 443
-  uuid: 76ac91c5-ea82-4046-8ee7-2ffbb563ac94
+  uuid: 8d42d29a-ed53-4684-a9ff-6b33826149de
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: geo.shkola112.site
+  servername: aio.eth0.dpdns.org
   network: ws
   ws-opts:
-    path: /api-vless
+    path: /aioproxybot/94.23.144.99-2053
     headers:
-      Host: geo.shkola112.site
+      Host: aio.eth0.dpdns.org
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇬🇪 GE 01 - xiaohe
+  - 🇱🇻 LV 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇪 GE 01 - xiaohe
+  - 🇱🇻 LV 01 - xiaohe
 rules:
 - MATCH,PROXIES
