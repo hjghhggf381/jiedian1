@@ -4,11 +4,11 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇪 SE 01 - xiaohe
+- name: 🇹🇷 土耳其 (Turkey) 01 (家宽) - xiaohe
   type: vless
-  server: psf-2.weedly.top
-  port: 80
-  uuid: 33016f3d-8509-493c-bd8b-d26447d48135
+  server: 114.129.43.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   udp: true
   tls: false
   skip-cert-verify: true
@@ -16,18 +16,18 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: stigmata.ir
+      Host: vms.lifetime04.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇸🇪 SE 01 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 01 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇪 SE 01 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 01 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
