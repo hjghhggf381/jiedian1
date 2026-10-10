@@ -1,0 +1,36 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇨🇳 CN 01 - xiaohe
+  type: vmess
+  server: gz1.polymarket.party
+  port: 23801
+  uuid: aec8e5e3-bb81-4b22-8802-0b88c54997b3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: us4.australiacaregroup.site
+  network: ws
+  ws-opts:
+    path: /vmess
+    headers:
+      Host: us4.australiacaregroup.site
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇨🇳 CN 01 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇨🇳 CN 01 - xiaohe
+rules:
+- MATCH,PROXIES
